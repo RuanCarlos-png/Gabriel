@@ -176,4 +176,70 @@ public class GerenciaBib{       //Gerenciador da Biblioteca (Atividade)
                this.Genero = null;
            }
         }
-    
+    public class DVD{
+            private String NomeDVD;
+            private String Autor;
+            private String Genero;
+
+            public String getNomeDVD(){
+                return this.NomeDVD;
+            }
+
+            public void setNomeDVD(String NomeDVD){
+                this.NomeDVD = NomeDVD;
+            }
+
+            public String getAutor(){
+                return this.Autor;
+            }
+
+            public void setAutor(String Autor){
+                this.Autor = Autor;
+            }
+
+            public String getGenero(){
+                return this.Genero;
+            }
+
+            public void setGenero(String Genero){
+                this.Genero = Genero;
+            }
+        }
+
+        public abstract class Emprestimo{
+            private String Nome;
+            private String NomeLivro;
+            private String Autor;
+            private int CPF;
+            
+            public String getNome(){
+                return this.Nome;
+            }
+
+            public void setNome(String Nome){
+                this.Nome = Nome;
+            }
+
+            public String getNomeLivro(){
+                return this.NomeLivro;
+            }
+
+            public void setNomeLivro(String NomeLivro){
+                this.NomeLivro = NomeLivro;
+            }
+
+            public String getAutor(){
+                return this.Autor;
+            }
+
+            public void setAutor(String Autor){
+                this.Autor = Autor;
+            }
+
+            public int getCPF(){
+                return this.CPF;
+            }
+
+            public void setCPF(int CPF){
+                this.CPF = CPF;
+            }
